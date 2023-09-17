@@ -27,8 +27,8 @@ Maybe these features will be included on top:
 ---
 ## Requirements
 
-[vmxtoolkit](https://github.com/bottkars/vmxtoolkit)
-[VMware Workstation Pro](https://customerconnect.vmware.com/de/downloads/info/slug/desktop_end_user_computing/vmware_workstation_pro/17_0)
+- [vmxtoolkit](https://github.com/bottkars/vmxtoolkit)
+- [VMware Workstation Pro](https://customerconnect.vmware.com/de/downloads/info/slug/desktop_end_user_computing/vmware_workstation_pro/17_0)
 
 ---
 ## Famous last words
