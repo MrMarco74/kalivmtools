@@ -7,6 +7,7 @@ $scriptFolder = "E:\buildscripts\"
 $kaliScriptfolder = "/home/kali/scripts/"
 $packedVM = "E:\kali-linux.7z"
 $kaliSetupScript = $kaliScriptfolder+"kali_setup.sh"
+$logfile = $kaliScriptfolder+"kali_setup.log"
 
 $URL = "https://cdimage.kali.org/current/"
 $WebResponseObj = Invoke-WebRequest -Uri $URL
@@ -68,7 +69,7 @@ $WebResponseObj.Links | Foreach {
 
             Write-Host "[Info] Starting $kaliSetupScript..."
             Write-Host "[Info] This will take a long time!"
-            Invoke-VMXBash -VMXName $VMX.VMXName -config $VMX.config -Guestuser kali -Guestpassword kali -Scriptblock "echo kali | sudo -S $kaliSetupScript"
+            Invoke-VMXBash -VMXName $VMX.VMXName -config $VMX.config -Guestuser kali -Guestpassword kali -Scriptblock "echo kali | sudo -S $kaliSetupScript >$logfile"
 
             Write-Host "[Info] Stopping Virtual Machine..."
             $VMX = Get-VMX -Path $VMFOLDER

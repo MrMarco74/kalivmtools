@@ -1,6 +1,6 @@
-mkdir /root/setup
-cd /root/setup/
-cat <<EOF | sudo tee /etc/default/keyboard 
+mkdir /home/kali/setup
+cd /home/kali/setup/
+cat <<EOF >/etc/default/keyboard 
 # KEYBOARD CONFIGURATION FILE
 # Consult the keyboard(5) manual page.
 XKBMODEL="pc105"
